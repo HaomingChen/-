@@ -1,0 +1,22 @@
+package com.imooc.concurrent.base;
+
+//军队线程
+//模拟作战双方的行为
+public class ArmyRunnable implements Runnable{
+
+    //volatile保证了可以正确读取其他线程写入的值
+    volatile boolean keepRunning = true;
+
+    @Override
+    public void run() {
+        while(keepRunning){
+            //发动五连击
+            for(int i = 0; i < 5; i++){
+                //让出处理器时间
+                Thread.yield();
+                System.out.println(Thread.currentThread().getName() + "进攻对方[" + i + "]");
+            }
+        }
+        System.out.println(Thread.currentThread().getName() + "结束战斗");
+    }
+}
