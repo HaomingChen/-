@@ -27,3 +27,6 @@ java.util.concurrent
 线程池ExecutorService
 Callable&Future
 BlockingQueue
+
+推荐阅读
+Java Concurrency In Practice 
