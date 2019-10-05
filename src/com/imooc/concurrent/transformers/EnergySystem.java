@@ -30,7 +30,7 @@ public class EnergySystem {
         //.wait()状态的线程处于_WaitSet队列中
         //持有monitor对象 -> 调用.wait() —>进入ObjectMonitor的_WaitSet队列
         //等待锁阻塞状态的线程处于_EntrySet队列
-        //The Owner指向获得ObjectMonitor对象的线程
+        //The Owner(Critical Section)指向获得ObjectMonitor对象的线程
         //ObjectWaiter为竞争锁的线程的封装
         synchronized (lockObj){
 //            if(energyBoxes[from] < amount)
@@ -52,7 +52,7 @@ public class EnergySystem {
             System.out.printf("从%d转移%10.2f单位能量到%d,", from,amount,to);
             energyBoxes[to] += amount;
             System.out.printf("能量总和: %10.2f%n",getTotalEnergies());
-            //等待线程_WaitSet被唤醒acquire ObjectMonitor
+            //所有处于Wait Set中的等待的线程被唤醒acquire ObjectMonitor
             lockObj.notifyAll();
         }
     }
