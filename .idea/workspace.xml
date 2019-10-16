@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64276499-8db4-4aff-a176-0bff1cfaeae0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/createthread/BothRunnableThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/createthread/RunnableStyle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/createthread/ThreadStyle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/AnonymousInnerClassDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/DemoTimmerTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/Lambda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/ThreadPool5.java" afterDir="false" />
+    <list default="true" id="64276499-8db4-4aff-a176-0bff1cfaeae0" name="Default Changelist" comment="1. 利用匿名内部类创建线程 2. 利用线程池创建线程 3. 利用lambda表达式创建&#10;线程 4.利用线程池创建线程 5. 创建线程的两种方式 6. 同时使用实现Runnable&#10;接口和继承Thread类来创建线程的情况。">
+      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/startthread/CantStartTwice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/startthread/StartAndRunMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadWithoutSleep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/AnonymousInnerClassDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/AnonymousInnerClassDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,23 +20,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/RunnableStyle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="330">
               <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-              <folding>
-                <element signature="e#239#240#0" expanded="true" />
-                <element signature="e#275#276#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/ThreadStyle.java">
+        <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/ThreadPool5.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="66">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="21" selection-end-column="9" />
               <folding>
-                <element signature="e#249#250#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,65 +41,57 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/BothRunnableThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            <state relative-caret-position="352">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
+                <element signature="e#405#406#0" expanded="true" />
                 <element signature="e#474#475#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/ThreadPool5.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadWithoutSleep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+            <state relative-caret-position="242">
+              <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/startthread/CantStartTwice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
+                <element signature="e#331#332#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/Executors.java">
+        <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/startthread/StartAndRunMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1535">
-              <caret line="602" column="60" lean-forward="true" selection-start-line="602" selection-start-column="60" selection-end-line="602" selection-end-column="60" />
+            <state relative-caret-position="221">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/java.util.concurrent.Executors">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>java.util.concurrent.Executors</OriginalElement>
-              <nodes>
-                <node x="0.0" y="0.0">java.util.concurrent.Executors</node>
-              </nodes>
-              <notes />
-              <edges />
-              <settings layout="Hierarchic Group" zoom="1.0" x="-109.0" y="49.0" />
-              <SelectedNodes />
-              <Categories />
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/DemoTimmerTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+            <state relative-caret-position="96">
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#322#487#0" expanded="true" />
                 <element signature="e#486#487#0" expanded="true" />
+                <marker date="1571119907345" expanded="true" signature="257:501" ph="..." />
               </folding>
             </state>
           </provider>
@@ -115,13 +100,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/AnonymousInnerClassDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="352">
+              <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding>
-                <element signature="e#223#371#1" expanded="true" />
-                <element signature="e#370#371#0" expanded="true" />
-                <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#224#404#0" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
+                <element signature="e#514#515#0" expanded="true" />
+                <element signature="e#606#607#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,17 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/Lambda.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/ThreadFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+            <state relative-caret-position="198">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -161,13 +137,14 @@
       <find>run(</find>
       <find>y</find>
       <find>target</find>
-      <find>start()</find>
       <find>run()</find>
       <find>new Thread(</find>
       <find>new Thread</find>
       <find>ThreadFactory</find>
       <find>DefaultThreadFac</find>
       <find>newThread</find>
+      <find>TimerTask</find>
+      <find>start()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -196,18 +173,21 @@
         <option value="$PROJECT_DIR$/src/threadcoreknowledge/createthread/RunnableStyle.java" />
         <option value="$PROJECT_DIR$/src/threadcoreknowledge/createthread/ThreadStyle.java" />
         <option value="$PROJECT_DIR$/src/threadcoreknowledge/createthread/BothRunnableThread.java" />
-        <option value="$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/ThreadPool5.java" />
-        <option value="$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/DemoTimmerTask.java" />
         <option value="$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/AnonymousInnerClassDemo.java" />
+        <option value="$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/DemoTimmerTask.java" />
         <option value="$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/Lambda.java" />
+        <option value="$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/ThreadPool5.java" />
+        <option value="$PROJECT_DIR$/src/threadcoreknowledge/startthread/StartAndRunMethod.java" />
+        <option value="$PROJECT_DIR$/src/threadcoreknowledge/startthread/CantStartTwice.java" />
+        <option value="$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadWithoutSleep.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="36" />
-    <option name="y" value="37" />
+    <option name="x" value="5" />
+    <option name="y" value="23" />
     <option name="width" value="1361" />
-    <option name="height" value="662" />
+    <option name="height" value="698" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -232,17 +212,39 @@
               <item name="JavaThreadCourse" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaThreadCourse" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="threadcoreknowledge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaThreadCourse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaThreadCourse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="threadcoreknowledge" type="462c0819:PsiDirectoryNode" />
               <item name="createthread" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaThreadCourse" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaThreadCourse" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="threadcoreknowledge" type="462c0819:PsiDirectoryNode" />
               <item name="createthread" type="462c0819:PsiDirectoryNode" />
               <item name="wrongways" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaThreadCourse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaThreadCourse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="threadcoreknowledge" type="462c0819:PsiDirectoryNode" />
+              <item name="startthread" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaThreadCourse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaThreadCourse" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="threadcoreknowledge" type="462c0819:PsiDirectoryNode" />
+              <item name="stopthread" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaThreadCourse" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -269,7 +271,7 @@
               <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,7 +283,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571046426755" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571196968460" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
@@ -298,7 +301,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Lambda">
+  <component name="RunManager" selected="Application.CantStartTwice">
     <configuration name="AnonymousInnerClassDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="threadcoreknowledge.createthread.wrongways.AnonymousInnerClassDemo" />
       <module name="javathread" />
@@ -312,12 +315,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BothRunnableThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="threadcoreknowledge.createthread.BothRunnableThread" />
+    <configuration name="CantStartTwice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="threadcoreknowledge.startthread.CantStartTwice" />
       <module name="javathread" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="threadcoreknowledge.createthread.*" />
+          <option name="PATTERN" value="threadcoreknowledge.startthread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -338,12 +341,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lambda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="threadcoreknowledge.createthread.wrongways.Lambda" />
+    <configuration name="RightWayStopThreadWithoutSleep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="threadcoreknowledge.stopthread.RightWayStopThreadWithoutSleep" />
       <module name="javathread" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="threadcoreknowledge.createthread.wrongways.*" />
+          <option name="PATTERN" value="threadcoreknowledge.stopthread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -351,12 +354,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadPool5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="threadcoreknowledge.createthread.wrongways.ThreadPool5" />
+    <configuration name="StartAndRunMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="threadcoreknowledge.startthread.StartAndRunMethod" />
       <module name="javathread" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="threadcoreknowledge.createthread.wrongways.*" />
+          <option name="PATTERN" value="threadcoreknowledge.startthread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -365,19 +368,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BothRunnableThread" />
-      <item itemvalue="Application.ThreadPool5" />
       <item itemvalue="Application.DemoTimmerTask" />
       <item itemvalue="Application.AnonymousInnerClassDemo" />
-      <item itemvalue="Application.Lambda" />
+      <item itemvalue="Application.StartAndRunMethod" />
+      <item itemvalue="Application.CantStartTwice" />
+      <item itemvalue="Application.RightWayStopThreadWithoutSleep" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Lambda" />
-        <item itemvalue="Application.AnonymousInnerClassDemo" />
+        <item itemvalue="Application.CantStartTwice" />
+        <item itemvalue="Application.RightWayStopThreadWithoutSleep" />
+        <item itemvalue="Application.StartAndRunMethod" />
         <item itemvalue="Application.DemoTimmerTask" />
-        <item itemvalue="Application.ThreadPool5" />
-        <item itemvalue="Application.BothRunnableThread" />
+        <item itemvalue="Application.AnonymousInnerClassDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -398,7 +401,8 @@
       <workItem from="1570522100098" duration="4654000" />
       <workItem from="1570540533210" duration="308000" />
       <workItem from="1570585669010" duration="2874000" />
-      <workItem from="1571036580052" duration="5680000" />
+      <workItem from="1571036580052" duration="5802000" />
+      <workItem from="1571119499584" duration="9197000" />
     </task>
     <task id="LOCAL-00001" summary="1. 验证synchronize的可重入性质 2. 验证synchronize的可重入粒度 &#10;3. synchronize关键字反编译指令">
       <created>1570540822605</created>
@@ -407,13 +411,20 @@
       <option name="project" value="LOCAL" />
       <updated>1570540822605</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1. 利用匿名内部类创建线程 2. 利用线程池创建线程 3. 利用lambda表达式创建&#10;线程 4.利用线程池创建线程 5. 创建线程的两种方式 6. 同时使用实现Runnable&#10;接口和继承Thread类来创建线程的情况。">
+      <created>1571046828601</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571046828601</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34405000" />
+    <option name="totallyTimeSpent" value="43724000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -424,6 +435,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
@@ -431,22 +443,22 @@
       <window_info id="Image Layers" order="3" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.39334342" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.39334342" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="1" weight="0.32991013" />
-      <window_info anchor="bottom" id="Messages" order="2" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.32978722" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="4" visible="true" weight="0.28032786" />
       <window_info anchor="bottom" id="Spring" order="5" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.34754097" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.34042552" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" />
-      <window_info anchor="bottom" id="Run" order="9" weight="0.23934427" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.2393617" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="13" weight="0.3295082" />
+      <window_info anchor="bottom" id="TODO" order="13" weight="0.3280142" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="right" id="Palette" order="0" />
@@ -465,9 +477,36 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1. 验证synchronize的可重入性质 2. 验证synchronize的可重入粒度 &#10;3. synchronize关键字反编译指令" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. 验证synchronize的可重入性质 2. 验证synchronize的可重入粒度 &#10;3. synchronize关键字反编译指令" />
+    <MESSAGE value="1. 利用匿名内部类创建线程 2. 利用线程池创建线程 3. 利用lambda表达式创建&#10;线程 4.利用线程池创建线程 5. 创建线程的两种方式 6. 同时使用实现Runnable&#10;接口和继承Thread类来创建线程的情况。" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. 利用匿名内部类创建线程 2. 利用线程池创建线程 3. 利用lambda表达式创建&#10;线程 4.利用线程池创建线程 5. 创建线程的两种方式 6. 同时使用实现Runnable&#10;接口和继承Thread类来创建线程的情况。" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/imooc/concurrent/base/stopthread/WrongWayStopThread.java" />
@@ -649,59 +688,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Java/jdk1.8.0_191/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="745" column="21" selection-start-line="745" selection-start-column="16" selection-end-line="745" selection-end-column="21" />
-          <folding>
-            <element signature="e#15704#15705#0" expanded="true" />
-            <element signature="e#15770#15771#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/RunnableStyle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding>
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/ThreadFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/BothRunnableThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding>
-            <element signature="e#474#475#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/ThreadStyle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#249#250#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/Executors.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1535">
-          <caret line="602" column="60" lean-forward="true" selection-start-line="602" selection-start-column="60" selection-end-line="602" selection-end-column="60" />
+        <state relative-caret-position="12078">
+          <caret line="602" column="60" selection-start-line="602" selection-start-column="60" selection-end-line="602" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -715,53 +705,135 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-109.0" y="49.0" />
-          <SelectedNodes />
+          <settings layout="Hierarchic Group" zoom="1.0" x="52.0" y="15.0" />
+          <SelectedNodes>
+            <node>java.util.concurrent.Executors</node>
+          </SelectedNodes>
           <Categories />
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/ThreadFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_191/src.zip!/java/util/TimerTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/ThreadStyle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/RunnableStyle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/ThreadPool5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        <state relative-caret-position="66">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="21" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/Lambda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/AnonymousInnerClassDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="352">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
-            <element signature="e#223#371#1" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#224#404#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/DemoTimmerTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        <state relative-caret-position="96">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#322#487#0" expanded="true" />
             <element signature="e#486#487#0" expanded="true" />
+            <marker date="1571119907345" expanded="true" signature="257:501" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/Lambda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/createthread/BothRunnableThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_191/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="721" column="45" lean-forward="true" selection-start-line="721" selection-start-column="45" selection-end-line="721" selection-end-column="45" />
+          <folding>
+            <element signature="e#15704#15705#0" expanded="true" />
+            <element signature="e#15770#15771#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/startthread/StartAndRunMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/startthread/CantStartTwice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadWithoutSleep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
         </state>
       </provider>
     </entry>
