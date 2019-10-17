@@ -19,7 +19,7 @@ public class WrongWayVolatileCantStop {
         producerThread.start();
         Thread.sleep(1000);
         Consumer consumer = new Consumer(storage);
-        while (consumer.needMoreNums()) {
+        while (consumer.needMoreNum()) {
             System.out.println(storage.take() + "被消费了");
             Thread.sleep(1000);
         }
@@ -31,7 +31,6 @@ public class WrongWayVolatileCantStop {
 class Producer implements Runnable {
 
     public volatile boolean canceled = false;
-
     BlockingQueue storage;
 
     public Producer(BlockingQueue storage) {
@@ -42,10 +41,10 @@ class Producer implements Runnable {
     public void run() {
         int num = 0;
         try {
-            while (num <= 10000000 && !canceled) {
+            while (num < 1000000 && !canceled) {
                 if (num % 100 == 0) {
                     storage.put(num);
-                    System.out.println(num + "是100的倍数, 被放入仓库中了");
+                    System.out.println(num + "是100的倍数,被放入仓库中了");
                 }
                 num++;
                 Thread.sleep(1);
@@ -65,7 +64,7 @@ class Consumer {
         this.storage = storage;
     }
 
-    public boolean needMoreNums() {
+    public boolean needMoreNum() {
         if (Math.random() > 0.95) {
             return false;
         }

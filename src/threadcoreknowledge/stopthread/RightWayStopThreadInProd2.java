@@ -26,6 +26,7 @@ public class RightWayStopThreadInProd2 implements Runnable {
     }
 
     public static void main(String[] args) {
+
         Thread thread = new Thread(new RightWayStopThreadInProd2());
         thread.start();
         try {

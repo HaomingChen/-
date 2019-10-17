@@ -18,7 +18,7 @@ public class WrongWayVolatileFixed {
         producerThread.start();
         Thread.sleep(1000);
         threadcoreknowledge.stopthread.volatiledemo.Consumer consumer = new threadcoreknowledge.stopthread.volatiledemo.Consumer(storage);
-        while (consumer.needMoreNums()) {
+        while (consumer.needMoreNum()) {
             System.out.println(storage.take() + "被消费了");
             Thread.sleep(1000);
         }
