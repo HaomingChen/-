@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64276499-8db4-4aff-a176-0bff1cfaeae0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/stopthread/CantInterrupt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadInProd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadInProd2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadWithSleep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadWithSleepEveryLoop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/stopthread/StopThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/stopthread/volatiledemo/WrongWayVolatile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/stopthread/volatiledemo/WrongWayVolatileCantStop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/threadcoreknowledge/stopthread/volatiledemo/WrongWayVolatileFixed.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadWithSleep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="638">
+              <caret line="29" column="5" selection-start-line="10" selection-start-column="3" selection-end-line="29" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -34,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadWithSleepEveryLoop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="28" column="5" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="616">
+              <caret line="28" column="5" selection-start-line="9" selection-start-column="3" selection-end-line="28" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -44,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/CantInterrupt.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="39" lean-forward="true" selection-start-column="39" selection-end-column="39" />
+              <caret column="39" selection-start-column="39" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -52,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadInProd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+            <state relative-caret-position="352">
+              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -79,41 +70,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/volatiledemo/WrongWayVolatileCantStop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="9" column="2" lean-forward="true" selection-end-line="74" />
+            <state relative-caret-position="176">
+              <caret line="9" column="2" selection-end-line="74" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1077#1078#0" expanded="true" />
                 <element signature="e#1115#1116#0" expanded="true" />
+                <element signature="e#1718#1719#0" expanded="true" />
                 <element signature="e#1756#1757#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/volatiledemo/WrongWayVolatileFixed.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="29" />
+            <state relative-caret-position="308">
+              <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1925#1926#0" expanded="true" />
-                <element signature="e#1963#1964#0" expanded="true" />
-                <element signature="e#2566#2567#0" expanded="true" />
-                <element signature="e#2604#2605#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="jar://C:/Java/jdk1.8.0_191/src.zip!/java/lang/Thread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="919" column="28" lean-forward="true" selection-start-line="919" selection-start-column="28" selection-end-line="920" selection-end-column="54" />
-              <folding>
-                <element signature="e#15704#15705#0" expanded="true" />
-                <element signature="e#15770#15771#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -123,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadInProd2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -201,10 +177,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-215" />
-    <option name="y" value="42" />
-    <option name="width" value="1361" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="45" />
+    <option name="y" value="18" />
+    <option name="width" value="1093" />
     <option name="height" value="698" />
   </component>
   <component name="ProjectView">
@@ -213,7 +189,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,13 +257,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="CatdeaLogs" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571217732816" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571220546608" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -412,7 +388,8 @@
       <workItem from="1570540533210" duration="308000" />
       <workItem from="1570585669010" duration="2874000" />
       <workItem from="1571036580052" duration="5802000" />
-      <workItem from="1571119499584" duration="18035000" />
+      <workItem from="1571119499584" duration="19509000" />
+      <workItem from="1571276545878" duration="1811000" />
     </task>
     <task id="LOCAL-00001" summary="1. 验证synchronize的可重入性质 2. 验证synchronize的可重入粒度 &#10;3. synchronize关键字反编译指令">
       <created>1570540822605</created>
@@ -435,11 +412,18 @@
       <option name="project" value="LOCAL" />
       <updated>1571204188343</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1. 错误停止线程的方法使用: stop() 2. 利用全局volatile变量 -&gt; 无法停止&#10;阻塞中的线程 3. sleep()会响应interrupt()方法且会重置interrupt方法设置的&#10;状态 4. 处理线程中断的最佳实践 -&gt; 优先选择在方法上抛出异常，&#10;使异常传递到run()方法。run方法无法抛出异常必须处理异常 5. 恢复中断 -&gt;&#10;在子方法中利用interrupt()方法重新标记当前线程的中断状态">
+      <created>1571219401449</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1571219401449</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52562000" />
+    <option name="totallyTimeSpent" value="55847000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -451,8 +435,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="45" y="18" width="1093" height="698" extended-state="0" />
     <layout>
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
@@ -460,7 +443,7 @@
       <window_info id="Image Layers" order="3" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.39334342" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.5111326" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="1" weight="0.32991013" />
@@ -468,10 +451,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.28032786" />
       <window_info anchor="bottom" id="Spring" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.33934426" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.28014183" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.3147541" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.3147541" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
@@ -519,12 +502,27 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1. 验证synchronize的可重入性质 2. 验证synchronize的可重入粒度 &#10;3. synchronize关键字反编译指令" />
     <MESSAGE value="1. 利用匿名内部类创建线程 2. 利用线程池创建线程 3. 利用lambda表达式创建&#10;线程 4.利用线程池创建线程 5. 创建线程的两种方式 6. 同时使用实现Runnable&#10;接口和继承Thread类来创建线程的情况。" />
     <MESSAGE value="1. 线程无法启动两次 2. start方法和run方法的区别 3. 停止线程的最佳实践" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. 线程无法启动两次 2. start方法和run方法的区别 3. 停止线程的最佳实践" />
+    <MESSAGE value="1. 错误停止线程的方法使用: stop() 2. 利用全局volatile变量 -&gt; 无法停止&#10;阻塞中的线程 3. sleep()会响应interrupt()方法且会重置interrupt方法设置的&#10;状态 4. 处理线程中断的最佳实践 -&gt; 优先选择在方法上抛出异常，&#10;使异常传递到run()方法。run方法无法抛出异常必须处理异常 5. 恢复中断 -&gt;&#10;在子方法中利用interrupt()方法重新标记当前线程的中断状态" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. 错误停止线程的方法使用: stop() 2. 利用全局volatile变量 -&gt; 无法停止&#10;阻塞中的线程 3. sleep()会响应interrupt()方法且会重置interrupt方法设置的&#10;状态 4. 处理线程中断的最佳实践 -&gt; 优先选择在方法上抛出异常，&#10;使异常传递到run()方法。run方法无法抛出异常必须处理异常 5. 恢复中断 -&gt;&#10;在子方法中利用interrupt()方法重新标记当前线程的中断状态" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://D:/Java/src.zip!/java/lang/Thread.java" />
@@ -846,38 +844,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadWithSleepEveryLoop.java">
+    <entry file="jar://C:/Java/jdk1.8.0_191/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="240">
+          <caret line="921" column="34" lean-forward="true" selection-start-line="921" selection-start-column="34" selection-end-line="921" selection-end-column="34" />
+          <folding>
+            <element signature="e#15704#15705#0" expanded="true" />
+            <element signature="e#15770#15771#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadWithSleep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="638">
+          <caret line="29" column="5" selection-start-line="10" selection-start-column="3" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadWithSleepEveryLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="5" selection-start-line="9" selection-start-column="3" selection-end-line="28" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/CantInterrupt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="39" lean-forward="true" selection-start-column="39" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadInProd2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret column="39" selection-start-column="39" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadInProd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        <state relative-caret-position="352">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -897,37 +899,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/volatiledemo/WrongWayVolatileCantStop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="9" column="2" lean-forward="true" selection-end-line="74" />
+        <state relative-caret-position="176">
+          <caret line="9" column="2" selection-end-line="74" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1077#1078#0" expanded="true" />
             <element signature="e#1115#1116#0" expanded="true" />
+            <element signature="e#1718#1719#0" expanded="true" />
             <element signature="e#1756#1757#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/volatiledemo/WrongWayVolatileFixed.java">
+    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadInProd2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1925#1926#0" expanded="true" />
-            <element signature="e#1963#1964#0" expanded="true" />
-            <element signature="e#2566#2567#0" expanded="true" />
-            <element signature="e#2604#2605#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="220">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Java/jdk1.8.0_191/src.zip!/java/lang/Thread.java">
+    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/volatiledemo/WrongWayVolatileFixed.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="919" column="28" lean-forward="true" selection-start-line="919" selection-start-column="28" selection-end-line="920" selection-end-column="54" />
+        <state relative-caret-position="308">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding>
-            <element signature="e#15704#15705#0" expanded="true" />
-            <element signature="e#15770#15771#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
