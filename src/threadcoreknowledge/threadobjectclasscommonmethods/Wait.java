@@ -18,6 +18,7 @@ public class Wait {
             synchronized (object) {
                 System.out.println(Thread.currentThread().getState());
                 try {
+                    //WAITING
                     object.wait();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -31,6 +32,7 @@ public class Wait {
         @Override
         public void run() {
             synchronized (object) {
+                //唤醒WAITING, 不释放锁
                 object.notify();
                 System.out.println(Thread.currentThread().getName() + ": 线程B运行结束");
             }

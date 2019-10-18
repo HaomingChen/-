@@ -14,8 +14,8 @@ public class TimedWaitingBlockedWaiting implements Runnable {
         thread1.start();
         Thread thread2 = new Thread(runnable);
         thread2.start();
-        System.out.println(thread1.getState());
-        System.out.println(thread2.getState());
+        System.out.println(thread1.getName() + " " + thread1.getState());
+        System.out.println(thread2.getName() + " " + thread2.getState());
         Thread.sleep(2000);
         System.out.println(thread1.getState());
     }
@@ -23,7 +23,6 @@ public class TimedWaitingBlockedWaiting implements Runnable {
     @Override
     public void run() {
         synchronized (this) {
-            System.out.println(Thread.currentThread().getName());
             try {
                 Thread.sleep(1000);
                 wait();
