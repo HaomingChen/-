@@ -14,22 +14,22 @@ public class EvenOddPrintWaitNotify {
     static volatile int count;
 
     public static void main(String[] args) {
-        Thread threadA = new Thread(new printNum(), "偶数");
-        Thread threadB = new Thread(new printNum(), "奇数");
+        Thread threadA = new Thread(new PrintNum());
+        Thread threadB = new Thread(new PrintNum());
         threadA.start();
         threadB.start();
     }
 
 }
 
-class printNum implements Runnable {
+class PrintNum implements Runnable {
     @Override
     public void run() {
         while (EvenOddPrintWaitNotify.count <= 100) {
             synchronized (EvenOddPrintWaitNotify.lock) {
-                EvenOddPrintWaitNotify.lock.notify();
-                System.out.println(Thread.currentThread().getName() + ":" + EvenOddPrintWaitNotify.count++);
                 try {
+                    EvenOddPrintWaitNotify.lock.notify();
+                    System.out.println(Thread.currentThread().getName() + ":" + EvenOddPrintWaitNotify.count++);
                     EvenOddPrintWaitNotify.lock.wait();
                 } catch (InterruptedException e) {
                     e.printStackTrace();

@@ -9,38 +9,46 @@ package threadcoreknowledge.threadobjectclasscommonmethods;
 public class EvenOddPrintSync {
 
     static volatile int count;
+    static Object lock = new Object();
 
     public static void main(String[] args) {
-        Thread threadA = new Thread(new printEvenNum());
-        Thread threadB = new Thread(new printOddNum());
+        Thread threadA = new Thread(new PrintEvenNum());
+        Thread threadB = new Thread(new PrintOddNum());
         threadA.start();
         threadB.start();
     }
 
 }
 
-class printEvenNum implements Runnable {
+class PrintEvenNum implements Runnable {
+
     @Override
     public void run() {
         while (EvenOddPrintSync.count < 100) {
-            synchronized (EvenOddPrintSync.class) {
+            //当该线程读取EvenOddPringSync.count时
+            //EvenOddPringSync.count为99小于100
+            //此时该线程被阻塞
+            synchronized (EvenOddPrintSync.lock) {
                 if ((EvenOddPrintSync.count & 1) == 0) {
-                    System.out.println("偶数" + EvenOddPrintSync.count++);
+                    System.out.println("偶数: " + EvenOddPrintSync.count++);
                 }
             }
         }
     }
+
 }
 
-class printOddNum implements Runnable {
+class PrintOddNum implements Runnable {
+
     @Override
     public void run() {
         while (EvenOddPrintSync.count < 100) {
-            synchronized (EvenOddPrintSync.class) {
+            synchronized (EvenOddPrintSync.lock) {
                 if ((EvenOddPrintSync.count & 1) == 1) {
-                    System.out.println("奇数" + EvenOddPrintSync.count++);
+                    System.out.println("奇数: " + EvenOddPrintSync.count++);
                 }
             }
         }
     }
+
 }
