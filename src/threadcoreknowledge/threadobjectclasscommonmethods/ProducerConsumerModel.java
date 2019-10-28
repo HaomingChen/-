@@ -12,84 +12,84 @@ import java.util.LinkedList;
 public class ProducerConsumerModel {
 
     public static void main(String[] args) {
-
-        EventStorage eventStorage = new EventStorage(10);
-        Producer producer = new Producer(eventStorage);
-        Consumer consumer = new Consumer(eventStorage);
-        new Thread(producer).start();
-        new Thread(consumer).start();
-
+        EventStorage eventStorage = new EventStorage();
+        Thread threadA = new Thread(new Consumer(eventStorage));
+        Thread threadB = new Thread(new Producer(eventStorage));
+        threadA.start();
+        threadB.start();
     }
 
-}
-
-class Producer implements Runnable {
-
-    private EventStorage storage;
-
-    public Producer(
-            EventStorage storage) {
-        this.storage = storage;
-    }
-
-    @Override
-    public void run() {
-        for (int i = 0; i < 100; i++) {
-            try {
-                storage.put();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-}
-
-class Consumer implements Runnable {
-
-    private EventStorage storage;
-
-    public Consumer(
-            EventStorage storage) {
-        this.storage = storage;
-    }
-
-    @Override
-    public void run() {
-        for (int i = 0; i < 100; i++) {
-            try {
-                storage.take();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-    }
 }
 
 class EventStorage {
 
     LinkedList<Date> storage;
-    int capacity;
+    public int capacity;
+
+    public EventStorage() {
+        this(10);
+    }
 
     public EventStorage(int capacity) {
-        this.storage = new LinkedList<>();
+        storage = new LinkedList<>();
         this.capacity = capacity;
     }
 
-    public synchronized void take() throws InterruptedException {
-        while (storage.size() == 0) {
+    public synchronized void consume() throws InterruptedException {
+        while (storage.isEmpty()) {
             wait();
         }
-        System.out.println("拿到了" + storage.poll());
+        System.out.println(storage.poll());
         notify();
     }
 
-    public synchronized void put() throws InterruptedException {
+    public synchronized void produce() throws InterruptedException {
         while (storage.size() == capacity) {
             wait();
         }
-        System.out.println("仓库里有了" + storage.add(new Date()));
+        System.out.println("Add new Date");
+        storage.add(new Date());
         notify();
     }
-
 }
+
+class Consumer implements Runnable {
+
+    EventStorage eventStorage;
+
+    public Consumer(EventStorage eventStorage) {
+        this.eventStorage = eventStorage;
+    }
+
+    @Override
+    public void run() {
+        for (int i = 0; i < 100; i++) {
+            try {
+                eventStorage.consume();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class Producer implements Runnable {
+
+    EventStorage eventStorage;
+
+    public Producer(EventStorage eventStorage) {
+        this.eventStorage = eventStorage;
+    }
+
+    @Override
+    public void run() {
+        for (int i = 0; i < 100; i++) {
+            try {
+                eventStorage.produce();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+

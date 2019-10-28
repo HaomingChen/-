@@ -1,6 +1,5 @@
 package threadcoreknowledge.background;
 
-
 /**
  * 描述: 观察者模式
  *
@@ -11,13 +10,16 @@ public class MultiThreadsErrorListener {
 
     int count;
 
+    //出错原因 - 类未完成实例化, 线程即运行
     public MultiThreadsErrorListener(MySource source) {
+        //不需要MultiThreadsErrorListener实例化完成即注册listener
         source.registerListener(new EventListener() {
             @Override
             public void onEvent(Event e) {
                 System.out.println("\n我得到的数字是" + count);
             }
         });
+        //在此处mySource.eventCome()运行即造成输出错误
         for (int i = 0; i < 10000; i++) {
             System.out.println(i);
         }

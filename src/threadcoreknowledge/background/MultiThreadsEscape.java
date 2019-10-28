@@ -23,12 +23,16 @@ public class MultiThreadsEscape {
         return states;
     }
 
+    public Map<String, String> getSafeStates() {
+        return new HashMap<>(states);
+    }
+
     public static void main(String[] args) {
         MultiThreadsEscape multiThreadsEscape = new MultiThreadsEscape();
-        Map<String, String> states = multiThreadsEscape.getStates();
-        System.out.println(states.get("1"));
+        Map<String, String> states = multiThreadsEscape.getSafeStates();
+        System.out.println(multiThreadsEscape.getSafeStates().get("1"));
         states.remove("1");
-        System.out.println(states.get("1"));
+        System.out.println(multiThreadsEscape.getSafeStates().get("1"));
     }
 
 }

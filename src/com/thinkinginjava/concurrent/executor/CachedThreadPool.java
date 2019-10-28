@@ -1,15 +1,15 @@
 package com.thinkinginjava.concurrent.executor;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 
 /**
  * @author 58212
  * @date 2019-10-24 23:54
  */
 public class CachedThreadPool {
-    public static void main(String[] args) throws InterruptedException {
-        ExecutorService exec = Executors.newCachedThreadPool();
+    public static void main(String[] args) {
+        ExecutorService exec = new ThreadPoolExecutor(0, 5, 60L,
+                TimeUnit.SECONDS, new SynchronousQueue<>());
         for (int i = 0; i < 5; i++) {
             exec.execute(() -> {
                 try {
