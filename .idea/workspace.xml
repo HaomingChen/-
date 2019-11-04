@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64276499-8db4-4aff-a176-0bff1cfaeae0" name="Default Changelist" comment="1. 利用返回副本防止private对象逃逸问题 2. 观察者模式中注册监听器输出&#10;不正确问题 3. 利用工厂模式解决逸出">
-      <change afterPath="$PROJECT_DIR$/src/jmm/FieldVisibility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jmm/OutOfOrderExecution.java" afterDir="false" />
+    <list default="true" id="64276499-8db4-4aff-a176-0bff1cfaeae0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/jmm/NoVolatile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jmm/FieldVisibility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jmm/FieldVisibility.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,15 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/StopThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/stopthread/RightWayStopThreadInProd.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -94,15 +85,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jmm/FieldVisibility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+            <state relative-caret-position="132">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#258#259#0" expanded="true" />
                 <element signature="e#314#315#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jmm/NoVolatile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -161,7 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/threadcoreknowledge/createthread/BothRunnableThread.java" />
         <option value="$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/AnonymousInnerClassDemo.java" />
         <option value="$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/DemoTimmerTask.java" />
         <option value="$PROJECT_DIR$/src/threadcoreknowledge/createthread/wrongways/Lambda.java" />
@@ -212,12 +211,13 @@
         <option value="$PROJECT_DIR$/src/threadcoreknowledge/stopthread/StopThread.java" />
         <option value="$PROJECT_DIR$/src/jmm/OutOfOrderExecution.java" />
         <option value="$PROJECT_DIR$/src/jmm/FieldVisibility.java" />
+        <option value="$PROJECT_DIR$/src/jmm/NoVolatile.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="640" />
-    <option name="y" value="39" />
+    <option name="x" value="260" />
+    <option name="y" value="6" />
     <option name="width" value="1150" />
     <option name="height" value="706" />
   </component>
@@ -226,6 +226,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -249,14 +250,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="CatdeaLogs" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572343564055" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572861695429" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -279,9 +279,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FieldVisibility">
+  <component name="RunManager" selected="Application.VolatileOk">
     <configuration name="FieldVisibility" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jmm.FieldVisibility" />
+      <module name="javathread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jmm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoVolatile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jmm.NoVolatile" />
+      <module name="javathread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jmm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoVolatile2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jmm.NoVolatile2" />
       <module name="javathread" />
       <extension name="coverage">
         <pattern>
@@ -306,38 +332,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StopThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="threadcoreknowledge.stopthread.StopThread" />
+    <configuration name="VolatileOk" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jmm.VolatileOk" />
       <module name="javathread" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="threadcoreknowledge.stopthread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WrongWayVolatile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="threadcoreknowledge.stopthread.volatiledemo.WrongWayVolatile" />
-      <module name="javathread" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="threadcoreknowledge.stopthread.volatiledemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WrongWayVolatileCantStop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="threadcoreknowledge.stopthread.volatiledemo.WrongWayVolatileCantStop" />
-      <module name="javathread" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="threadcoreknowledge.stopthread.volatiledemo.*" />
+          <option name="PATTERN" value="jmm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -346,19 +346,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.StopThread" />
-      <item itemvalue="Application.WrongWayVolatile" />
-      <item itemvalue="Application.WrongWayVolatileCantStop" />
       <item itemvalue="Application.OutOfOrderExecution" />
       <item itemvalue="Application.FieldVisibility" />
+      <item itemvalue="Application.NoVolatile" />
+      <item itemvalue="Application.NoVolatile2" />
+      <item itemvalue="Application.VolatileOk" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.VolatileOk" />
+        <item itemvalue="Application.NoVolatile2" />
+        <item itemvalue="Application.NoVolatile" />
         <item itemvalue="Application.FieldVisibility" />
         <item itemvalue="Application.OutOfOrderExecution" />
-        <item itemvalue="Application.WrongWayVolatileCantStop" />
-        <item itemvalue="Application.WrongWayVolatile" />
-        <item itemvalue="Application.StopThread" />
       </list>
     </recent_temporary>
   </component>
@@ -392,7 +392,8 @@
       <workItem from="1571969798563" duration="4206000" />
       <workItem from="1572228409883" duration="14735000" />
       <workItem from="1572314316829" duration="10917000" />
-      <workItem from="1572416273777" duration="1330000" />
+      <workItem from="1572416273777" duration="2085000" />
+      <workItem from="1572850142750" duration="975000" />
     </task>
     <task id="LOCAL-00001" summary="1. 验证synchronize的可重入性质 2. 验证synchronize的可重入粒度 &#10;3. synchronize关键字反编译指令">
       <created>1570540822605</created>
@@ -478,11 +479,18 @@
       <option name="project" value="LOCAL" />
       <updated>1572256910859</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="1. 测试可见性 2. 测试重排序现象">
+      <created>1572427380740</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1572427380740</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151312000" />
+    <option name="totallyTimeSpent" value="153042000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -494,7 +502,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="260" y="6" width="1150" height="706" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Capture Tool" order="0" />
@@ -503,7 +511,7 @@
       <window_info id="Image Layers" order="3" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.17397882" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.17706423" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="1" weight="0.32991013" />
@@ -511,7 +519,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
       <window_info anchor="bottom" id="Spring" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.30983606" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.18196721" />
+      <window_info anchor="bottom" id="Terminal" order="6" visible="true" weight="0.18181819" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" />
       <window_info anchor="bottom" id="Run" order="9" weight="0.38688526" />
@@ -591,16 +599,10 @@
     <MESSAGE value="1. 线程同步问题: 结果错误(在何处以及何时发生) -&gt; synchronize线程可见, &#10;index++不同步" />
     <MESSAGE value="1. 必然死锁 2. 初始化未完毕，就this赋值 3.private对象逃逸" />
     <MESSAGE value="1. 利用返回副本防止private对象逃逸问题 2. 观察者模式中注册监听器输出&#10;不正确问题 3. 利用工厂模式解决逸出" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. 利用返回副本防止private对象逃逸问题 2. 观察者模式中注册监听器输出&#10;不正确问题 3. 利用工厂模式解决逸出" />
+    <MESSAGE value="1. 测试可见性 2. 测试重排序现象" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. 测试可见性 2. 测试重排序现象" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/imooc/synchronize/SynchronizedObjectClassClass5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/imooc/synchronize/SynchronizedObjectCodeBlock2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1014,12 +1016,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jmm/FieldVisibility.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        <state relative-caret-position="132">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#258#259#0" expanded="true" />
             <element signature="e#314#315#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jmm/NoVolatile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
         </state>
       </provider>
     </entry>

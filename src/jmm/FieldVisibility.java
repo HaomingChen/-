@@ -8,7 +8,7 @@ package jmm;
  */
 public class FieldVisibility {
 
-    volatile int a = 1;
+    int a = 1;
     volatile int b = 2;
 
     private void change() {
