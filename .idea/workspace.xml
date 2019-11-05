@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64276499-8db4-4aff-a176-0bff1cfaeae0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/jmm/SynchronizeVisibility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/singleton/SingletonHu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/singleton/SingletonHuSta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/singleton/SingletonInPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/singleton/SingletonInnerClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/singleton/SingletonLazy1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/singleton/SingletonLazy2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/singleton/SingletonLazy3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,22 +83,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SynchronizeVisibility">
+  <component name="RunManager" selected="Application.SingletonInPractice">
     <configuration name="MultiThreadsError6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="threadcoreknowledge.background.MultiThreadsError6" />
-      <module name="javathread" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="threadcoreknowledge.background.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MultiThreadsErrorListenerFixed" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="threadcoreknowledge.background.MultiThreadsErrorListenerFixed" />
       <module name="javathread" />
       <extension name="coverage">
         <pattern>
@@ -134,6 +123,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SingletonInPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="singleton.SingletonInPractice" />
+      <module name="javathread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="singleton.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SynchronizeVisibility" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jmm.SynchronizeVisibility" />
       <module name="javathread" />
@@ -149,18 +151,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.MultiThreadsError6" />
-      <item itemvalue="Application.MultiThreadsErrorListenerFixed" />
       <item itemvalue="Application.MultiThreadsEscape" />
       <item itemvalue="Application.OutOfOrderExecution" />
       <item itemvalue="Application.SynchronizeVisibility" />
+      <item itemvalue="Application.SingletonInPractice" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SingletonInPractice" />
         <item itemvalue="Application.SynchronizeVisibility" />
         <item itemvalue="Application.OutOfOrderExecution" />
         <item itemvalue="Application.MultiThreadsEscape" />
         <item itemvalue="Application.MultiThreadsError6" />
-        <item itemvalue="Application.MultiThreadsErrorListenerFixed" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +195,8 @@
       <workItem from="1571903880827" duration="6144000" />
       <workItem from="1571969798563" duration="4206000" />
       <workItem from="1572228409883" duration="13581000" />
-      <workItem from="1572873556336" duration="2976000" />
+      <workItem from="1572873556336" duration="3027000" />
+      <workItem from="1572958383396" duration="5192000" />
     </task>
     <task id="LOCAL-00001" summary="1. 验证synchronize的可重入性质 2. 验证synchronize的可重入粒度 &#10;3. synchronize关键字反编译指令">
       <created>1570540822605</created>
@@ -272,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571909480665</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1. 两种饿汉式单例写法, 直接复制，静态代码块">
+      <created>1572878408590</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1572878408590</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +328,8 @@
     <MESSAGE value="1. 验证了线程结果错误(在何处以及何时发生) -&gt; synchronize线程可见, &#10;index++不同步" />
     <MESSAGE value="1. 线程同步问题: 结果错误(在何处以及何时发生) -&gt; synchronize线程可见, &#10;index++不同步" />
     <MESSAGE value="1. 必然死锁 2. 初始化未完毕，就this赋值 3.private对象逃逸" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. 必然死锁 2. 初始化未完毕，就this赋值 3.private对象逃逸" />
+    <MESSAGE value="1. 两种饿汉式单例写法, 直接复制，静态代码块" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. 两种饿汉式单例写法, 直接复制，静态代码块" />
   </component>
   <component name="masterDetails">
     <states>
