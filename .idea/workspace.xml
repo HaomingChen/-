@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64276499-8db4-4aff-a176-0bff1cfaeae0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/singleton/SingletonInPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/singleton/SingletonInnerClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/singleton/SingletonLazy1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/singleton/SingletonLazy2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/singleton/SingletonLazy3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deadlock/MustDeadLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/deadlock/TransferMoney.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,26 +80,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SingletonInPractice">
-    <configuration name="MultiThreadsError6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="threadcoreknowledge.background.MultiThreadsError6" />
+  <component name="RunManager" selected="Application.TransferMoney">
+    <configuration name="MustDeadLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="deadlock.MustDeadLock" />
       <module name="javathread" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="threadcoreknowledge.background.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MultiThreadsEscape" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="threadcoreknowledge.background.MultiThreadsEscape" />
-      <module name="javathread" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="threadcoreknowledge.background.*" />
+          <option name="PATTERN" value="deadlock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,20 +133,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TransferMoney" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="deadlock.TransferMoney" />
+      <module name="javathread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deadlock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.MultiThreadsError6" />
-      <item itemvalue="Application.MultiThreadsEscape" />
       <item itemvalue="Application.OutOfOrderExecution" />
       <item itemvalue="Application.SynchronizeVisibility" />
       <item itemvalue="Application.SingletonInPractice" />
+      <item itemvalue="Application.MustDeadLock" />
+      <item itemvalue="Application.TransferMoney" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TransferMoney" />
+        <item itemvalue="Application.MustDeadLock" />
         <item itemvalue="Application.SingletonInPractice" />
         <item itemvalue="Application.SynchronizeVisibility" />
         <item itemvalue="Application.OutOfOrderExecution" />
-        <item itemvalue="Application.MultiThreadsEscape" />
-        <item itemvalue="Application.MultiThreadsError6" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +193,9 @@
       <workItem from="1571969798563" duration="4206000" />
       <workItem from="1572228409883" duration="13581000" />
       <workItem from="1572873556336" duration="3027000" />
-      <workItem from="1572958383396" duration="5192000" />
+      <workItem from="1572958383396" duration="5407000" />
+      <workItem from="1573055735496" duration="49000" />
+      <workItem from="1573136303395" duration="3232000" />
     </task>
     <task id="LOCAL-00001" summary="1. 验证synchronize的可重入性质 2. 验证synchronize的可重入粒度 &#10;3. synchronize关键字反编译指令">
       <created>1570540822605</created>
@@ -282,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572878408590</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="1. 单例的写法 -静态变量直接赋值 -静态内部类 -synchronize关键字加锁&#10;-双重检查 -使用枚举(推荐)">
+      <created>1572976045899</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1572976045899</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +335,8 @@
     <MESSAGE value="1. 线程同步问题: 结果错误(在何处以及何时发生) -&gt; synchronize线程可见, &#10;index++不同步" />
     <MESSAGE value="1. 必然死锁 2. 初始化未完毕，就this赋值 3.private对象逃逸" />
     <MESSAGE value="1. 两种饿汉式单例写法, 直接复制，静态代码块" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. 两种饿汉式单例写法, 直接复制，静态代码块" />
+    <MESSAGE value="1. 单例的写法 -静态变量直接赋值 -静态内部类 -synchronize关键字加锁&#10;-双重检查 -使用枚举(推荐)" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. 单例的写法 -静态变量直接赋值 -静态内部类 -synchronize关键字加锁&#10;-双重检查 -使用枚举(推荐)" />
   </component>
   <component name="masterDetails">
     <states>
