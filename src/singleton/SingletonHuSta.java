@@ -1,6 +1,8 @@
 package singleton;
 
 /**
+ * 静态代码块
+ *
  * @author 58212
  * @date 2019-11-04 22:38
  */
