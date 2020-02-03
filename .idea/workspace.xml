@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64276499-8db4-4aff-a176-0bff1cfaeae0" name="Default Changelist" comment="1. rewrite double checkedSingleton 2. rewrite consumer producer module by using .wait() and .notify() method.">
-      <change afterPath="$PROJECT_DIR$/src/studyjuc/threadpool/EveryTaskOneThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/studyjuc/threadpool/FixedThreadPoolOom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/studyjuc/threadpool/FixedThreadPoolTest.java" afterDir="false" />
+    <list default="true" id="64276499-8db4-4aff-a176-0bff1cfaeae0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/studyjuc/threadpool/ScheduleAndCachedThreadPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/studyjuc/threadpool/Shutdown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/studyjuc/threadpool/SingleThreadExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/线程池参数详解.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thinkinginjavaconcurrency/streamfuture/ParallelPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/thinkinginjavaconcurrency/streamfuture/ParallelPrime.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +49,9 @@
       <recent name="interviewqs" />
       <recent name="threadcoreknowledge.stopthread" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace2\JavaThreadCourse" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -62,7 +65,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FixedThreadPoolOom">
+  <component name="RunManager" selected="Application.Shutdown">
     <configuration name="ConsumerProducerModule" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="interviewqs.ConsumerProducerModule" />
       <module name="javathread" />
@@ -115,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TryLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="deadlock.TryLock" />
+    <configuration name="Shutdown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="studyjuc.threadpool.Shutdown" />
       <module name="javathread" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="deadlock.*" />
+          <option name="PATTERN" value="studyjuc.threadpool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,19 +132,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TryLock" />
       <item itemvalue="Application.LiveLock" />
       <item itemvalue="Application.ConsumerProducerModule" />
       <item itemvalue="Application.EveryTaskOneThread" />
       <item itemvalue="Application.FixedThreadPoolOom" />
+      <item itemvalue="Application.Shutdown" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Shutdown" />
         <item itemvalue="Application.FixedThreadPoolOom" />
         <item itemvalue="Application.EveryTaskOneThread" />
         <item itemvalue="Application.ConsumerProducerModule" />
         <item itemvalue="Application.LiveLock" />
-        <item itemvalue="Application.TryLock" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +195,8 @@
       <workItem from="1580565176679" duration="2102000" />
       <workItem from="1580625745449" duration="3846000" />
       <workItem from="1580649667940" duration="4059000" />
-      <workItem from="1580658613827" duration="5159000" />
+      <workItem from="1580658613827" duration="5414000" />
+      <workItem from="1580737912828" duration="7531000" />
     </task>
     <task id="LOCAL-00001" summary="1. 验证synchronize的可重入性质 2. 验证synchronize的可重入粒度 &#10;3. synchronize关键字反编译指令">
       <created>1570540822605</created>
@@ -306,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578841578406</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="1. 为什么要使用线程池以及为什么要手动创建线程池">
+      <created>1580664913400</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1580664913400</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,6 +368,7 @@
     <MESSAGE value="1. 可以利用volatile保证线程安全和不能保证volatile保证线程安全的情况" />
     <MESSAGE value="1. 使用ThreadMXBean检测死锁 2. 保证转账时获取锁的顺序性修复死锁" />
     <MESSAGE value="1. rewrite double checkedSingleton 2. rewrite consumer producer module by using .wait() and .notify() method." />
-    <option name="LAST_COMMIT_MESSAGE" value="1. rewrite double checkedSingleton 2. rewrite consumer producer module by using .wait() and .notify() method." />
+    <MESSAGE value="1. 为什么要使用线程池以及为什么要手动创建线程池" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. 为什么要使用线程池以及为什么要手动创建线程池" />
   </component>
 </project>
