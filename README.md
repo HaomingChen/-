@@ -44,7 +44,7 @@ CallerRunsPolicy: 将任务交由提交任务的线程执行 -> 负反馈机制
 9. 线程池的状态
 Running: 接受新任务并处理排队任务
 Shutdown: 不接受新任务,但处理排队任务
-Stop: 不接受新任务，也不处理排队任务，并中断正在进行的任务
+Stop: 不接受新任务，也不处理排队任务，并中断正在 进行的任务
 Tidying: 所有任务都已终止， work count为0，线程转换到tidying状态，
 并运行terminate()钩子方法。
 terminated：terminate()运行完成

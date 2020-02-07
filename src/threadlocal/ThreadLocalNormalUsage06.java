@@ -25,6 +25,7 @@ class Service2 {
     public void process() {
         User user = UserContextHolder.holder.get();
         System.out.println("Service2拿到用户名: " + user.name);
+        UserContextHolder.holder.remove();
         new Service3().process();
     }
 }
