@@ -3,12 +3,15 @@ package threadlocal;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author Haoming Chen
  * Created on 2020/2/6
  */
 public class ThreadLocalNormalUsage01 {
+
+    ReentrantLock rc = new ReentrantLock();
 
     public static void main(String[] args) throws InterruptedException {
         for (int i = 0; i < 30; i++) {
