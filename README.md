@@ -59,7 +59,7 @@ terminated：terminate()运行完成
  思考: 按照粒度来分: 局部变量的作用域一般为方法内, 线程不共有, 在每个线程创建的时候就会创建
  一般线程安全, 但是浪费资源。 ThreadLocal的作用于为线程内, 线程不共有， 故线程安全。静态变量
  整个java程序共有, 线程共有，所以可能发生线程不安全的情况。 应按照使用场景来合理使用这三种变量。
- Spring中的Threadlocal: 
+ Spring中的Threadlocal: RequestContextHolder
  ((ServletRequestAttributes)RequestContextHolder.getRequestAttributes()).getRequest() 
  
 11. 达成死锁的条件
@@ -96,3 +96,6 @@ happens-before八大原则
                        }
 13. synchronize: 悲观锁(高并发, 线程竞争激烈) CAS:乐观锁
 14. git -> CAS乐观锁
+15. 排他锁: 独占锁 共享锁: 读锁
+16. ReentrantReadWriteLock非公平锁的实现策略: 读锁可以直接尝试抢锁, 写锁将检查队列的头部, 若头部不为持有读锁的线程, 
+则可以抢锁。 原因: 读锁可以为多个获取读锁的线程共享。 若在非公平锁的状态下。 读锁插队不断获取锁将会造成写锁的饥饿。
