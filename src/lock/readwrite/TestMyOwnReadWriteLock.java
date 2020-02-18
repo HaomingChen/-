@@ -20,22 +20,17 @@ public class TestMyOwnReadWriteLock {
             threads[i] = new Thread(() -> read(), "read " + i);
         }
         for (int i = 0; i < 100; i++) {
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             threads[i].start();
-        }
-        try {
-            Thread.sleep(600);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         }
         new Thread(() -> write(), "Write1").start();
     }
 
     public static void read() {
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         readLock.lock();
         try {
             System.out.println(Thread.currentThread().getName() + ": I gotta read something");
