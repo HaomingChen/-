@@ -29,12 +29,12 @@ public class SpinLock {
             public void run() {
                 System.out.println(Thread.currentThread().getName() + "开始尝试获取自旋锁");
                 spinLock.lock();
-                System.out.println(Thread.currentThread().getName() + "获取到了自旋锁");
+                System.out.println(Thread.currentThread().getName() + "获得了自旋锁");
                 try {
                     Thread.sleep(300);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
-                }finally {
+                } finally {
                     spinLock.unlock();
                 }
             }
